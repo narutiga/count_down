@@ -23,7 +23,7 @@
 
 /* 日付のスタイル */
 .clock-date {
-  font-size: 25px;
+  font-size: 100px;
 }
 
 /* 時間のスタイル */
@@ -34,9 +34,9 @@
 /* 文字サイズ調整 */
 @media screen and (max-width: 500px) {
   .clock-date {
-    font-size: 15vw;
+    font-size: 20vw;
   }
   .clock-time {
-    font-size: 15vw;
+    font-size: 20vw;
   }
 }
