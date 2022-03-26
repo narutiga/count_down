@@ -1,5 +1,5 @@
 const clock = () => {
-    const goal = new Date("2023-01-01 00:00:00");
+    const goal = new Date("2023-01-01 20:10:00");
     const start = new Date();
 
     left = goal.getTime() - start.getTime();
@@ -16,7 +16,11 @@ const clock = () => {
     
     let time =`残り${days}日　${hours}:${min}:${sec}`;
     
+    if(left <= 0) {
+        document.querySelector(".clock-date").innerText = "Congratulation!!";
+    } else {
     document.querySelector(".clock-time").innerText = time;
+    };
 
 };
 
